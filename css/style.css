@@ -5,13 +5,30 @@
     padding: 0;
 }
 
-clearfix::after {
+.clearfix::after {
     content: "";
     display: table;
     clear: both;
 }
 
+/* debug rules */
+.debug .viewport {
+    background-color: aqua;
+}
+
+.debug main {
+    background-color: blue;
+}
+
+.debug .main_content {
+    background-color: blueviolet;
+}
+
 /* common rules  */
+.viewport {
+    width: 100vw;
+    height: 100vh;
+}
 
 /* utility */
 
@@ -22,7 +39,43 @@ Header
 /*********************
 Main  
 *********************/
+main {
+    height: calc(100% - 60px);
+}
+
+/* sidebar */
+.sidebar {
+    width: 180px;
+    height: 100%;
+    background-color: #000000;
+    float: left;
+}
+
+/* main_content */
+.main_content {
+    width: calc(100% - 180px);
+    height: 100%;
+    float: left;
+}
+
+/* head */
+.head {
+    width: 100%;
+    height: 50px;
+    background-color: #080b12;
+}
+
+/* brani */
+.brani {
+    width: 100%;
+    height: calc(100% - 50px);
+    background-color: #141922;
+}
 
 /*********************
 Footer  
 *********************/
+footer {
+    height: 60px;
+    background-color: #282828;
+}
