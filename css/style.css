@@ -31,6 +31,10 @@
 }
 
 /* utility */
+.link {
+    text-decoration: none;
+    color: #7d7f84;
+}
 
 /*********************
 Header  
@@ -61,14 +65,32 @@ main {
 /* head */
 .head {
     width: 100%;
-    height: 50px;
+    height: 60px;
     background-color: #080b12;
+    text-align: right;
+    vertical-align: middle;
+    padding-top: 1.2rem;
+}
+
+.upgrade {
+    font-size: .6rem;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    border: 1px solid white;
+    border-radius: 2rem;
+    padding: .7rem 1rem;
+    margin-right: 1rem;
+}
+.upgrade:hover {
+    font-size: 1rem;
 }
 
 /* brani */
 .brani {
     width: 100%;
-    height: calc(100% - 50px);
+    height: calc(100% - 60px);
     background-color: #141922;
 }
 
