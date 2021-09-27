@@ -212,7 +212,7 @@ main {
     flex-wrap: wrap;
 }
 .filter li {
-    margin: 1rem .6rem;
+    padding: 1rem .6rem;
     font-size: .8rem;
 }
 
@@ -279,11 +279,26 @@ main {
 .song h4 {
     color: #7d7f84;
 }
+#hit {
+    font-size: .8rem;
+    color: #7d7f84;
+    margin-bottom: 1.5rem;
+}
 
 .artist {
     margin-top: 5%;
 }
+.artist .song, .popular .song {
+    margin-right: 1rem;
+}
 
+.short {
+    justify-content: left;
+}
+
+.popular img {
+    border-radius: 50%;
+}
 /*********************
 Footer  
 *********************/
