@@ -142,8 +142,12 @@ main {
     color: white;
     overflow: hidden;
 }
-.playlist .lista {
+.playlist .lista ul {
+    height: 170px;
     overflow-y: auto;
+}
+.playlist .lista li {
+    height: 20px;
 }
 .playlist i {
     vertical-align: middle;
@@ -190,7 +194,10 @@ main {
         visibility: hidden;
     }
     .sidebar {
-        
+        width: 65px;
+    }
+    .main_content {
+        width: calc(100% - 65px);
     }
     
 }
@@ -246,11 +253,13 @@ main {
     width: 100%;
     height: calc(100% - 80px);
     background-color: #141922;
+    overflow-y: auto
 }
 
 .row {
     padding: 0 2rem;
-    height: 35%;
+    height: 220px;
+    margin-bottom: 3rem;
 }
 .row h2 {
     font-weight: bold;
@@ -262,7 +271,8 @@ main {
     justify-content: space-between;
 }
 .list > div {
-    width: calc(100%/6.5);
+    width: calc(100%/6);
+    padding: 0 .4rem;
 }
 .list img {
     width: 100%;
@@ -299,6 +309,15 @@ main {
 .popular img {
     border-radius: 50%;
 }
+
+@media screen and (max-width: 768px) {
+    .list > div {
+        width: calc(100%/4);
+        flex-wrap: wrap;
+        flex-shrink: 0;
+    }
+    
+}
 /*********************
 Footer  
 *********************/
@@ -330,8 +349,14 @@ footer {
 .control .middle i {
     margin-right: 1rem;
 }
+.control .middle > div {
+    height: 50%;
+}
 .big {
     font-size: 1.2rem;
+}
+.big:hover {
+    font-size: 1.5rem;
 }
 
 .timebar {
