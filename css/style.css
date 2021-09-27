@@ -290,6 +290,8 @@ Footer
 footer {
     height: 60px;
     background-color: #282828;
+    color: #7d7f84;
+    font-size: .7rem;
 }
 
 .control {
@@ -300,10 +302,28 @@ footer {
 .control .left, .control .right {
     width: 220px;
     height: 60px;
-    background-color: khaki;
 }
 .control .middle {
-    width: 440px;
+    width: 450px;
     height: 60px;
     background-color: khaki;
+}
+.control .left {
+    display: flex;
+    align-items: center;
+    
+}
+.control img {
+    height: 70%;
+    vertical-align: middle;
+}
+.control h3 {
+    color: white;
+}
+.control .current {
+    margin-left: 1rem;
+    margin-right: 3rem;
+}
+.save i:first-child {
+    margin-right: .5rem;
 }
