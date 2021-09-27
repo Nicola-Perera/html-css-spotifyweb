@@ -189,20 +189,6 @@ main {
     background-color: #808080;
 }
 
-@media screen and (max-width: 320px) {
-    .hidden {
-        visibility: hidden;
-    }
-    .sidebar {
-        width: 65px;
-    }
-    .main_content {
-        width: calc(100% - 65px);
-    }
-    
-}
-
-
 /* main_content */
 .main_content {
     width: calc(100% - 220px);
@@ -315,6 +301,34 @@ main {
         width: calc(100%/4);
         flex-wrap: wrap;
         flex-shrink: 0;
+    }
+    
+}
+
+@media screen and (max-width: 580px) {
+    .list {
+        flex-wrap: wrap;
+        justify-content: left;
+    }
+    .song {
+        width: calc(100%/4);
+        flex-shrink: 0;
+    }
+    
+}
+
+@media screen and (max-width: 413px) {
+    .hidden {
+        visibility: hidden;
+    }
+    .sidebar {
+        width: 65px;
+    }
+    .main_content {
+        width: calc(100% - 65px);
+    }
+    .list > div {
+        width: calc(100%/2);
     }
     
 }
