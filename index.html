@@ -33,7 +33,7 @@
 
                         <div class="logo">
                             <img src="./img/favicon.ico" alt="">
-                            <h1 class="logo">Spotify <span>&reg;</span></h1>
+                            <h1 class="logo hidden">Spotify <span>&reg;</span></h1>
                         </div>
 
                         <div class="search">
@@ -45,19 +45,21 @@
                             
                         </div>
 
-                        <div class="playlist">
+                        <div class="playlist hidden">
                             <h3 class="elenco">Playlist</h3>
 
-                            <ul>
-                                <li class="side_li link"><a class=" link overwhite" href=""><i class="fas fa-2x fa-plus-square"></i> Crea Playlist</a></li>
-                                <li class="side_li link"><a class=" link overwhite" href="">Nome Playlist</a></li>
-                                <li class="side_li link"><a class=" link overwhite" href="">Nome Playlist</a></li>
-                                <li class="side_li link"><a class=" link overwhite" href="">Nome Playlist</a></li>
-                                <li class="side_li link"><a class=" link overwhite" href="">Nome Playlist</a></li>
-                                <li class="side_li link"><a class=" link overwhite" href="">Nome Playlist</a></li>
-                                <li class="side_li link"><a class=" link overwhite" href="">Nome Playlist</a></li>
-                                <li class="side_li link"><a class=" link overwhite" href="">Nome Playlist</a></li>
-                            </ul>
+                            <div class="lista">
+                                <ul>
+                                    <li class="side_li link"><a class=" link overwhite" href=""><i class="fas fa-2x fa-plus-square"></i> Crea Playlist</a></li>
+                                    <li class="side_li link"><a class=" link overwhite" href="">Nome Playlist</a></li>
+                                    <li class="side_li link"><a class=" link overwhite" href="">Nome Playlist</a></li>
+                                    <li class="side_li link"><a class=" link overwhite" href="">Nome Playlist</a></li>
+                                    <li class="side_li link"><a class=" link overwhite" href="">Nome Playlist</a></li>
+                                    <li class="side_li link"><a class=" link overwhite" href="">Nome Playlist</a></li>
+                                    <li class="side_li link"><a class=" link overwhite" href="">Nome Playlist</a></li>
+                                    <li class="side_li link"><a class=" link overwhite" href="">Nome Playlist</a></li>
+                                </ul>
+                            </div>
 
                         </div>
 
@@ -66,12 +68,13 @@
                     <!-- brano corrente -->
                     <div class="end side_li">
                         <ul>
-                            <li class="side_li link"><a class=" link overwhite" href="">Installa App</a></li>
+                            <li class="side_li link"><img class="download" src="./img/download.svg" alt=""><a class=" link overwhite" href=""> Installa App</a></li>
                         </ul>
 
-                        <hr class="">
+                        <hr class="hidden">
 
-                        <h3 class="side_li"> <i class="fas fa-user-circle"></i> John Doe</h3>
+                        <img src="./img/profile.svg" alt="">
+                        <h3 class="side_li hidden"> John Doe</h3>
 
                     </div>
 
@@ -101,7 +104,7 @@
                     </div>
 
                     <!-- ascoltati di recente -->
-                    <div class="row">
+                    <div class="row recent">
 
                         <h2>Recently Played</h2>
 
@@ -119,16 +122,16 @@
                             <div class="song">
 
                                 <img src="./img/stranger.jpeg" alt="">
-                                <h3 class="title" >Heavy Metal</h3>
+                                <h3 class="title" >Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)</h3>
                             
-                                <h4>Subtitle</h4>
+                                <h4>Kyle Dixon & Michael Stein</h4>
 
                             </div>
 
                             <div class="song">
 
                                 <img src="./img/aquietplace.jpeg" alt="">
-                                <h3 class="title" >Heavy Metal</h3>
+                                <h3 class="title" >A quiet place</h3>
                             
                                 <h4>Subtitle</h4>
 
@@ -137,7 +140,7 @@
                             <div class="song">
 
                                 <img src="./img/split.jpeg" alt="">
-                                <h3 class="title" >Heavy Metal</h3>
+                                <h3 class="title" >Split</h3>
                             
                                 <h4>Subtitle</h4>
 
@@ -146,7 +149,7 @@
                             <div class="song">
 
                                 <img src="./img/cure.jpeg" alt="">
-                                <h3 class="title" >Heavy Metal</h3>
+                                <h3 class="title" >A cure for wellness</h3>
                             
                                 <h4>Subtitle</h4>
 
@@ -155,7 +158,68 @@
                             <div class="song">
 
                                 <img src="./img/sinister.jpeg" alt="">
-                                <h3 class="title" >Heavy Metal</h3>
+                                <h3 class="title" >Sinister</h3>
+                            
+                                <h4>Subtitle</h4>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="row artist">
+
+                        <h2>Creato per John Doe</h2>
+
+                        <div class="list">
+
+                            <div class="song">
+
+                                <h4>Più ascolti, più accurati saranno i suggerimenti</h4>
+
+                                <img src="./img/radar.jpeg" alt="">
+                                <h3 class="title" >Release Radar</h3>
+
+                            </div>
+
+                            <div class="song">
+
+                                <img src="./img/stranger.jpeg" alt="">
+                                <h3 class="title" >Daily Mix 1</h3>
+
+                            </div>
+
+                            <div class="song">
+
+                                <img src="./img/aquietplace.jpeg" alt="">
+                                <h3 class="title" >A quiet place</h3>
+                            
+                                <h4>Subtitle</h4>
+
+                            </div>
+
+                            <div class="song">
+
+                                <img src="./img/split.jpeg" alt="">
+                                <h3 class="title" >Split</h3>
+                            
+                                <h4>Subtitle</h4>
+
+                            </div>
+
+                            <div class="song">
+
+                                <img src="./img/cure.jpeg" alt="">
+                                <h3 class="title" >A cure for wellness</h3>
+                            
+                                <h4>Subtitle</h4>
+
+                            </div>
+
+                            <div class="song">
+
+                                <img src="./img/sinister.jpeg" alt="">
+                                <h3 class="title" >Sinister</h3>
                             
                                 <h4>Subtitle</h4>
 
@@ -172,6 +236,23 @@
     
         <!-- blocco interazione -->
         <footer>
+
+            <div class="control">
+
+                <div class="left">
+                    
+
+                </div>
+
+                <div class="middle">
+
+                </div>
+
+                <div class="right">
+
+                </div>
+
+            </div>
             
         </footer>
 

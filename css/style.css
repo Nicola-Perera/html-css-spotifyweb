@@ -109,7 +109,6 @@ main {
 
 .start {
     width: 100%;
-    height: 30%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -141,6 +140,14 @@ main {
 
 .playlist {
     color: white;
+    overflow: hidden;
+}
+.playlist .lista {
+    overflow-y: auto;
+}
+.playlist i {
+    vertical-align: middle;
+    margin-right: .5rem;
 }
 
 .search li, .playlist li, .end li {
@@ -153,15 +160,39 @@ main {
     width: 100%;
     height: 10%;
 }
-
 .end ul {
     margin-bottom: .7rem;
 }
-.end li 
+
+.download {
+    width: 1rem;
+    vertical-align: middle;
+    color: #7d7f84;
+    margin-left: -1.3rem;
+    margin-right: .6rem;
+}
+
 .end h3 {
     color: white;
     font-size: .9rem;
     margin-top: 1rem;
+    margin-left: -1rem;
+    display: inline-block;
+}
+.end > img {
+    width: 1rem;
+    border-radius: 50%;
+    background-color: #808080;
+}
+
+@media screen and (max-width: 320px) {
+    .hidden {
+        visibility: hidden;
+    }
+    .sidebar {
+        
+    }
+    
 }
 
 
@@ -172,6 +203,9 @@ main {
     float: left;
 }
 
+.filter {
+    height: 10%;
+}
 .filter ul {
     display: flex;
     justify-content: center;
@@ -216,25 +250,28 @@ main {
 
 .row {
     padding: 0 2rem;
+    height: 35%;
 }
 .row h2 {
     font-weight: bold;
-    margin-bottom: 1rem;
+    padding-bottom: 1rem;
 }
 
 .list {
     display: flex;
+    justify-content: space-between;
 }
 .list > div {
-    width: calc(100%/6);
-    height: 50px
+    width: calc(100%/6.5);
 }
 .list img {
     width: 100%;
 }
 
 .song {
+    height: 100%;
     text-align: center;
+    font-size: .6rem;
 }
 .song h3 {
     margin: .5rem 0;
@@ -243,10 +280,30 @@ main {
     color: #7d7f84;
 }
 
+.artist {
+    margin-top: 5%;
+}
+
 /*********************
 Footer  
 *********************/
 footer {
     height: 60px;
     background-color: #282828;
+}
+
+.control {
+    display: flex;
+    justify-content: space-between;
+}
+
+.control .left, .control .right {
+    width: 220px;
+    height: 60px;
+    background-color: khaki;
+}
+.control .middle {
+    width: 440px;
+    height: 60px;
+    background-color: khaki;
 }
